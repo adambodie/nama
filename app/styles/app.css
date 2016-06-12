@@ -1,0 +1,43 @@
+body {
+  background-color: lightblue;
+}
+
+.letter h1 {
+  text-align: center;
+  font-size: 4em;
+}
+
+.letter {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.letter:hover {
+  background-color: lightgray;
+}
+.letter p {
+  text-align: center;
+}
+audio {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  width: 200px;
+  font-size: 1.5em;
+}
+table {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#vowel-svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

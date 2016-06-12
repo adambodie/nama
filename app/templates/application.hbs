@@ -1,3 +1,73 @@
-<h2 id="title">Welcome to Ember</h2>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">An Overview of the Khoekhoe Language</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>           
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Phonology<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>{{#link-to 'vowels'}}Vowels{{/link-to}}</li>
+                <li role="separator" class="divider"></li>
+                <li>{{#link-to 'consonants'}}Consonants{{/link-to}}</li>
+                <li role="separator" class="divider"></li>
+                <li>{{#link-to 'clicks'}}Clicks{{/link-to}}</li> 
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Morphology<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>{{#link-to 'vowels'}}Vowels{{/link-to}}</li>
+                <li role="separator" class="divider"></li>
+                <li>{{#link-to 'consonants'}}Consonants{{/link-to}}</li>
+                <li role="separator" class="divider"></li>
+                <li>{{#link-to 'clicks'}}Clicks{{/link-to}}</li> 
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Syntax<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                    <li>{{#link-to 'syntax'}}Main{{/link-to}}</li>
+                    <li role="separator" class="divider"></li>
+                    <li>{{#link-to 'activity'}}Activity{{/link-to}}</li>
+                    <li role="separator" class="divider"></li>
+                    <li>{{#link-to 'indirect'}}Indirect Object{{/link-to}}</li>
+                    <li role="separator" class="divider"></li>
+                    <li>{{#link-to 'locative'}}Locative{{/link-to}}</li>
+                    <li role="separator" class="divider"></li>
+                    <li>{{#link-to 'argument'}}Argument{{/link-to}}</li>
+                    <li role="separator" class="divider"></li>
+                    <li>{{#link-to 'universal'}}Universal{{/link-to}}</li>
+                    <li role="separator" class="divider"></li>
+                    <li>{{#link-to 'demonstrative'}}Demonstrative{{/link-to}}</li>
+                    <li role="separator" class="divider"></li>
+                    <li>{{#link-to 'relative'}}Relative{{/link-to}}</li>
+                    <li role="separator" class="divider"></li>
+                </ul>
+              </li>
+          </ul>
 
-{{outlet}}
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 id="title">An Overview of the Khoekhoe Language</h1>
+        <p>Khoekhoe, or Nama, is the national language of Namibia, spoken by the indigenous Nama and Damara people.  A member of the Khoisan language family famous for their use of clicks, Khoekhoe is the most used of the click languages found in some parts of Africa.  Read more about its phonology, morphology, syntax and more here.</p>
+      </div>
+    </div>
+<div class="container">    
+  {{outlet}}
+  <footer>
+    <p>&copy; 2016 Adam Bodie, Inc.</p>
+  </footer>
+</div>
