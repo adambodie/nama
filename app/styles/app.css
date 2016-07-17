@@ -81,13 +81,18 @@ span {
     line-height: 1.42857143;
     color: white;
     white-space: nowrap;
+    width: 100%;
+}
+
+.dropdown-menu {
+  min-width: inherit;
 }
 
 .navbar {
   margin-bottom: 0;
 }
 .navbar li {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .tab {
@@ -136,7 +141,6 @@ span {
 
 .letter {
   padding: 5px;
-  display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: auto;
@@ -167,8 +171,7 @@ audio {
 }
 
 .syntax {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -177,6 +180,9 @@ audio {
   background-color: #A59957;
 }
 
+.nama-word {
+  font-family: Arial;
+}
 /* Table CSS
 -----------------------------------------*/
 td {
@@ -201,7 +207,7 @@ table {
 .side-link li {
   font-weight: bold;
   padding: 10px;
-  font-size: 1.2em;
+  font-size: 0.8em;
   text-align: left;
 }
 .side-link li:hover {
@@ -216,7 +222,7 @@ table {
   font-weight: bold;
 }
 
-/* Accordian CSS
+/* Accordion CSS
 --------------------------------*/
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
@@ -233,6 +239,7 @@ table {
     background-color: inherit;
     color: #333333;
     font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 0.8em;
 }
 dt {
   text-indent: 2em;
@@ -262,7 +269,17 @@ footer p {
 
 /*Query CSS
  ----------------------------------*/
+@media (max-width: 767px) {
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: whitesmoke;
+  }
+}
+
 @media screen and (min-width: 1024px){
+  .letter {
+    display: inline-block;
+    width: 200px;
+  }
   .view-screen {
     border-left: 1px solid black;
     border-top: 0;  
@@ -270,10 +287,18 @@ footer p {
     padding-left: 50px;
     padding-right: 50px;
   }
+  .ui-widget-content {
+    font-size: inherit;
+}
+  
   .side-screen {
     padding-left: 50px;
     padding-right: 50px;  
   }
+  .side-link li {
+  font-size: 1.2em;
+}
+  
   li {
     display: block;
   }
