@@ -1,20 +1,19 @@
-<div class="container">
-<h2>{{title}}</h2>
-{{#each phoneme as |item|}}
-    <div class="col-md-3">
-      <div class="letter">
-        <h1>{{item.symbol}}</h1>
-        <p>{{item.description}}</p>
-        {{#if item.sound }}
-        <audio controls>
-              <source src="../audio/{{item.sound}}.wav" type="audio/wav">
-              <source src="../audio/{{item.sound}}.ogg" type="audio/ogg">
-              <source src="../audio/{{item.sound}}.mp3" type="audio/mpeg">  
-              Your browser does not support the audio tag.
-        </audio>
-        {{/if}}
+<div class="row"> 
+  <h1>{{title}}</h1>
+  {{#each phoneme as |item|}}
+      <div class="col-sm-6 col-md-3">
+        <div class="letter">
+          <h1>{{item.symbol}}</h1>
+          <p>{{item.description}}</p>
+          {{#if item.sound }}
+          <audio controls>
+                <source src="../audio/{{item.sound}}.wav" type="audio/wav">
+                <source src="../audio/{{item.sound}}.ogg" type="audio/ogg">
+                <source src="../audio/{{item.sound}}.mp3" type="audio/mpeg">  
+                Your browser does not support the audio tag.
+          </audio>
+          {{/if}}
+        </div>
       </div>
-    </div>
-{{/each}}
+  {{/each}}
 </div>
-

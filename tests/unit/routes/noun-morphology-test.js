@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:applicative', 'Unit | Route | applicative', {
+moduleFor('route:noun-morphology', 'Unit | Route | noun morphology', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

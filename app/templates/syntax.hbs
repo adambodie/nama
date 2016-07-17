@@ -1,23 +1,62 @@
 <div class="row">
-<div class="col-md-3">
-  <h1>Syntax</h1>
-  <ul>
-    <li>{{#link-to 'activity'}}Activity{{/link-to}}</li>
-    <li>{{#link-to 'indirect'}}Indirect Object{{/link-to}}</li>
-    <li>{{#link-to 'locative'}}Locative{{/link-to}}</li>
-    <li>{{#link-to 'argument'}}Argument{{/link-to}}</li>
-    <li>{{#link-to 'universal'}}Universal{{/link-to}}</li>
-    <li>{{#link-to 'demonstrative'}}Demonstrative{{/link-to}}</li>
-    <li>{{#link-to 'relative'}}Relative{{/link-to}}</li>
+<div class="col-md-3 side-screen">
+  <h1 class="title-link">{{#link-to 'syntax'}}Syntax{{/link-to}}</h1>
+  <ul class="side-link">
+    <li>{{#link-to 'declarative'}}Declarative{{/link-to}}</li>
+    <li>{{#link-to 'interrogative'}}Interrogative{{/link-to}}</li>
+    <li>{{#link-to 'hortative'}}Imperative-Hortative{{/link-to}}</li>
+    <li>{{#link-to 'verbphrase'}}Verb Phrase{{/link-to}}</li>
     <li>{{#link-to 'tense'}}Tense{{/link-to}}</li>
-    <li>{{#link-to 'passive'}}Passive{{/link-to}}</li>
-    <li>{{#link-to 'reflexive'}}Reflexive{{/link-to}}</li>
     <li>{{#link-to 'aspect'}}Aspect{{/link-to}}</li>
     <li>{{#link-to 'negation'}}Negation{{/link-to}}</li>
+    <li>{{#link-to 'modifier'}}Modifier{{/link-to}}</li>      
   </ul>
 </div>
-<div class="col-md-9">
-  <!--<p>The sentence structure for Khoekhoe is SOV (Subject-Object-Verb).  Objects in a sentence are marked with the suffix -à.  DECL = Declarative, RMT.PST = Remote Past, OBJ = Object, IMP = Imperative.</p>-->
+<div class="col-md-9 view-screen">
+  <nav class="navbar">
+        <div id="navbar">
+          <ul class="nav navbar-nav">    
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marker Key<span class="caret"></span></a>
+              <ul class="dropdown-menu" style="background-image: none; padding: 10px;">
+                <li>DECL - Declarative</li>
+                <li>OBJ - Object</li>
+                <li>IMP - Imperative</li>
+                <li>COP - Copula</li>
+                <li>PASS - Passive</li>
+                <li>REFL - Reflexive</li>
+                <li>APP - Applicative</li>
+                <li>REC - Reciprocal</li>
+                <li>NEG - Negative</li>
+                <li>NEG.COP - Negative Copula</li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tense Key<span class="caret"></span></a>
+              <ul class="dropdown-menu" style="background-image: none; padding: 10px;">
+                <li>RMT.PST - Remote Past</li>
+                <li>REC.PST - Recent Past</li>
+                <li>PRES - Present</li>
+                <li>FUT - Future</li>
+                <li>.IMP - Imperfective</li>
+                <li>.PER - Perfective</li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pronoun Key<span class="caret"></span></a>
+              <ul class="dropdown-menu" style="background-image: none; padding: 10px;">
+                <li>1SG - First Person Singular</li>
+                <li>2ND - Second Person</li>
+                <li>3SG - Third Person Singular</li>
+                <li>3PL - Third Person Plural</li>
+                <li>-M - Masculine</li>
+                <li>-F - Feminine</li>
+              </ul>
+            </li>               
+          </ul>
+
+        </div><!--/.nav-collapse -->
+    </nav>
   {{outlet}}
 </div>
 </div>

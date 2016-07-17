@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:locative', 'Unit | Route | locative', {
+moduleFor('route:lexicon', 'Unit | Route | lexicon', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

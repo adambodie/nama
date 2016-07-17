@@ -6,24 +6,34 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('index', {path: '/'});
-  this.route('vowels');
-  this.route('consonants');
-  this.route('clicks');
+  this.route('phonology', function(){
+    this.route('vowels', {resetNamespace: true});
+    this.route('consonants', {resetNamespace: true});
+    this.route('clicks', {resetNamespace: true});
+    });
+  this.route('morphology', function () {
+    this.route('pronoun-morphology', {resetNamespace: true});
+    this.route('noun-morphology', {resetNamespace: true});
+    this.route('verb-morphology', {resetNamespace: true});
+    this.route('structure', {resetNamespace: true});    
+    });
   this.route('syntax', function() {
-      this.route('activity', {resetNamespace: true});
-      this.route('indirect', {resetNamespace: true});
-      this.route('locative', {resetNamespace: true});
-      this.route('argument', {resetNamespace: true});
-      this.route('universal', {resetNamespace: true});
-      this.route('demonstrative', {resetNamespace: true});
-      this.route('relative', {resetNamespace: true});
-      this.route('tense', {resetNamespace: true});
-      this.route('passive', {resetNamespace: true});
-      this.route('reflexive', {resetNamespace: true});
-      this.route('applicative', {resetNamespace: true});
-      this.route('aspect', {resetNamespace: true});
-      this.route('negation', {resetNamespace: true});
-      });
-  });
+    this.route('declarative', {resetNamespace: true});
+    this.route('verbphrase', {path: '/verb-phrase', resetNamespace: true});
+    this.route('tense', {resetNamespace: true});
+    this.route('aspect', {resetNamespace: true});
+    this.route('negation', {resetNamespace: true});
+    this.route('interrogative', {resetNamespace: true});
+    this.route('hortative', {resetNamespace: true});
+    this.route('modifier', {resetNamespace: true});
+    });
 
+  this.route('lexicon', function(){
+    this.route('borrowing', {resetNamespace: true});
+    this.route('gender', {path: '/gender-replacement', resetNamespace: true});
+    
+    });
+
+
+});
 export default Router;

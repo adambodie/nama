@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:relative', 'Unit | Route | relative', {
+moduleFor('route:phonology', 'Unit | Route | phonology', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

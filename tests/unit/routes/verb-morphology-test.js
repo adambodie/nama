@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:passive', 'Unit | Route | passive', {
+moduleFor('route:verb-morphology', 'Unit | Route | verb morphology', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });
